@@ -32,9 +32,11 @@ jobs:
 
       - name: Build with Vite
         run: npm run build
+        env:
+          VITE_CONFIG_NATIVE_IGNORE_WARNING: true
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
