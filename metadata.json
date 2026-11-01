@@ -1,0 +1,6 @@
+{
+  "name": "Nexbay - ERP Mobile Pro pour Commerces & Ateliers",
+  "description": "L'ERP mobile tout-en-un pour le commerce de détail et les ateliers de réparation en Afrique subsaharienne. POS ultra-rapide, stocks, Mobile Money et fiches d'intervention.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
