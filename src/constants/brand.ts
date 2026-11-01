@@ -23,6 +23,6 @@ export const BRAND_CONFIG = {
     supportEmail: 'contact@nexbay.com',
     playStoreUrl: '#download-playstore',
     appStoreUrl: '#download-appstore',
-    directApkUrl: '#download-apk',
+    directApkUrl: 'https://github.com/fmbc111-afk/Nexbay-Web-site/releases/download/v1.0.0-pilot/nexbay-pilot.apk',
   },
 };

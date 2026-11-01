@@ -46,7 +46,8 @@ export const DemoModal: React.FC<DemoModalProps> = ({
 
           <div className="flex items-center gap-2">
             <a
-              href="#download"
+              href={BRAND_CONFIG.social.directApkUrl}
+              download
               onClick={onClose}
               className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#00D4B2] text-[#0A2540] text-xs font-bold hover:bg-[#00bda0] transition-colors"
             >

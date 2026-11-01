@@ -77,7 +77,8 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, currency, onOpenDemo })
             {/* CTAs */}
             <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
               <a
-                href="#download"
+                href={BRAND_CONFIG.social.directApkUrl}
+                download
                 className="flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl text-base font-bold text-[#0A2540] bg-[#00D4B2] hover:bg-[#00bda0] shadow-xl shadow-[#00D4B2]/25 hover:shadow-[#00D4B2]/40 transition-all transform hover:-translate-y-0.5 cursor-pointer text-center"
               >
                 <Smartphone className="w-5 h-5" />

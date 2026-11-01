@@ -83,7 +83,8 @@ export const DownloadCta: React.FC<DownloadCtaProps> = ({ currentLang, onOpenDem
 
           {/* Android Pilot Access Button */}
           <a
-            href={`mailto:${BRAND_CONFIG.social.supportEmail}?subject=Demande%20Acces%20Pilote%20Nexbay`}
+            href={BRAND_CONFIG.social.directApkUrl}
+            download
             className="flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-[#0e3153] border border-[#00D4B2]/40 hover:border-[#00D4B2] transition-all transform hover:-translate-y-0.5 shadow-xl group text-left cursor-pointer"
           >
             <div className="w-8 h-8 rounded-lg bg-[#00D4B2] flex items-center justify-center text-[#0A2540]">
@@ -94,7 +95,7 @@ export const DownloadCta: React.FC<DownloadCtaProps> = ({ currentLang, onOpenDem
                 {currentLang === 'fr' ? 'Programme Pilote' : 'Pilot Program'}
               </span>
               <span className="block text-sm font-bold text-white group-hover:text-[#00D4B2] transition-colors">
-                {currentLang === 'fr' ? 'Demander l\'Accès Android' : 'Request Android Access'}
+                {currentLang === 'fr' ? 'Télécharger Android APK' : 'Download Android APK'}
               </span>
             </div>
           </a>

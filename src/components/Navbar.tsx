@@ -459,7 +459,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Primary Download CTA */}
           <a
-            href="#download"
+            href={BRAND_CONFIG.social.directApkUrl}
+            download
             className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-[#0A2540] bg-[#00D4B2] hover:bg-[#00bda0] shadow-lg shadow-[#00D4B2]/20 hover:shadow-[#00D4B2]/40 transition-all cursor-pointer"
           >
             <Smartphone className="w-3.5 h-3.5" />
@@ -641,7 +642,8 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
 
             <a
-              href="#download"
+              href={BRAND_CONFIG.social.directApkUrl}
+              download
               onClick={() => setMobileMenuOpen(false)}
               className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-bold text-[#0A2540] bg-[#00D4B2]"
             >
