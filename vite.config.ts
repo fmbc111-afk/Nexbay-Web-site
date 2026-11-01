@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/Nexbay-Web-site/',
+    base: process.env.GITHUB_PAGES === 'true' ? '/Nexbay-Web-site/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
