@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: '/Nexbay-Web-site/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
