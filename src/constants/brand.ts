@@ -20,7 +20,7 @@ export const BRAND_CONFIG = {
     border: '#163c63',
   },
   social: {
-    supportEmail: 'contact@nexbay.com',
+    supportEmail: 'contactnexbayerp@gmail.com',
     playStoreUrl: '#download-playstore',
     appStoreUrl: '#download-appstore',
     directApkUrl: 'https://github.com/fmbc111-afk/Nexbay-Web-site/releases/download/v1.0.0-pilot/nexbay-pilot.apk',
