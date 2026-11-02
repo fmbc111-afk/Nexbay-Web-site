@@ -10,6 +10,7 @@ interface DemoModalProps {
   onClose: () => void;
   currentLang: Language;
   currency: Currency;
+  onApkDownload: () => void;
 }
 
 export const DemoModal: React.FC<DemoModalProps> = ({
@@ -17,6 +18,7 @@ export const DemoModal: React.FC<DemoModalProps> = ({
   onClose,
   currentLang,
   currency,
+  onApkDownload,
 }) => {
   if (!isOpen) return null;
 
@@ -45,15 +47,14 @@ export const DemoModal: React.FC<DemoModalProps> = ({
           </div>
 
           <div className="flex items-center gap-2">
-            <a
-              href={BRAND_CONFIG.social.directApkUrl}
-              download
-              onClick={onClose}
+            <button
+              type="button"
+              onClick={onApkDownload}
               className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#00D4B2] text-[#0A2540] text-xs font-bold hover:bg-[#00bda0] transition-colors"
             >
               <Download className="w-3.5 h-3.5" />
               <span>{currentLang === 'fr' ? 'Télécharger' : 'Download'}</span>
-            </a>
+            </button>
 
             <button
               onClick={onClose}

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Language } from '../types';
 import { TRANSLATIONS } from '../constants/translations';
-import { BRAND_CONFIG } from '../constants/brand';
 import { Smartphone, Download, Sparkles, ShieldCheck, ArrowRight, Play } from 'lucide-react';
 
 interface DownloadCtaProps {
   currentLang: Language;
   onOpenDemo: () => void;
+  onApkDownload: () => void;
 }
 
-export const DownloadCta: React.FC<DownloadCtaProps> = ({ currentLang, onOpenDemo }) => {
+export const DownloadCta: React.FC<DownloadCtaProps> = ({ currentLang, onOpenDemo, onApkDownload }) => {
   const t = TRANSLATIONS[currentLang];
 
   return (
@@ -82,9 +82,9 @@ export const DownloadCta: React.FC<DownloadCtaProps> = ({ currentLang, onOpenDem
           </div>
 
           {/* Android Pilot Access Button */}
-          <a
-            href={BRAND_CONFIG.social.directApkUrl}
-            download
+          <button
+            type="button"
+            onClick={onApkDownload}
             className="flex items-center gap-3 px-6 py-3.5 rounded-2xl bg-[#0e3153] border border-[#00D4B2]/40 hover:border-[#00D4B2] transition-all transform hover:-translate-y-0.5 shadow-xl group text-left cursor-pointer"
           >
             <div className="w-8 h-8 rounded-lg bg-[#00D4B2] flex items-center justify-center text-[#0A2540]">
@@ -98,7 +98,7 @@ export const DownloadCta: React.FC<DownloadCtaProps> = ({ currentLang, onOpenDem
                 {currentLang === 'fr' ? 'Télécharger Android APK' : 'Download Android APK'}
               </span>
             </div>
-          </a>
+          </button>
         </div>
 
         {/* Instant Web Demo CTA */}
